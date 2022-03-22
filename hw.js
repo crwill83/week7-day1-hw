@@ -6,8 +6,8 @@ the list and checks that the current name is in the string passed in. The output
 //Your code goes here
 //Call method here with parameters
 
-let dog_names = ["Max","HAS","PuRple","dog"]
-let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
+const dog_names = ["Max","HAS","PuRple","dog"]
+const dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 
 
 function dog_Names(names, string) {
@@ -33,7 +33,16 @@ and replaces it with the string "even index" */
 const arr_names = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 
 function replaceEvens(arr){
-    
+    let new_arr = []
+    for(let i = 0; i < arr.length; i++) {
+        if (i % 2 == 0) {
+            new_arr.push('even index')
+        } else {
+            new_arr.push(arr[i])
+        }
+    } return new_arr
 }
+
+console.log(replaceEvens(arr_names))
 
 
